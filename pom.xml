@@ -219,6 +219,12 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <image>
+            <name>ghcr.io/twobiers/spring-petclinic</name>
+            <publish>true</publish>
+          </image>
+        </configuration>
         <executions>
           <execution>
             <!-- Spring Boot Actuator displays build-related information 
