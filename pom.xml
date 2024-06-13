@@ -224,6 +224,12 @@
             <name>ghcr.io/twobiers/spring-petclinic</name>
             <publish>true</publish>
           </image>
+          <docker>
+						<publishRegistry>
+							<username>${DOCKER_USERNAME}</username>
+							<password>${DOCKER_PASSWORD}</password>
+						</publishRegistry>
+					</docker>
         </configuration>
         <executions>
           <execution>

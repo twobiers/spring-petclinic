@@ -36,3 +36,6 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build docker
         run: ./mvnw spring-boot:build-image
+        env:
+          DOCKER_USERNAME: ${{ github.actor }}
+          DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
